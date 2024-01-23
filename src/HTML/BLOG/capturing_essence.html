@@ -9,7 +9,8 @@
     <script src="../../SCRIPTS/scripts.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/css/lightbox.min.css">
     <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/js/lightbox.min.js"></script>
-
+    <link rel="stylesheet" href="https://unpkg.com/@splidejs/splide@3.0.8/dist/css/splide.min.css">
+    <script src="../../SCRIPTS/slider.js"></script>
 </head>
 
 <body>
@@ -58,14 +59,34 @@
             </div>
         </div>
     </nav>
-
+    <div class=" flex flex-wrap items-center justify-between mx-auto p-4">
+        <div class="flex items-center space-x-2">
+            <a href="../home.html" class="text-amber-700 hover:text-amber-900">Home</a>
+            <a>/</a>
+            <a href="../blog.html" class="text-amber-700 hover:text-amber-900">Blog</a>
+            <a>/</a>
+            <a href="capturing_essence.html" class="text-amber-500 hover:text-amber-700">Capturing Essence</a>
+        </div>
+    </div>
     <!-- NAVEGACIÓ -->
-    <div class="m-4">
+    <div class="relative">
+        <img src="../../IMAGES/animals.jpg" alt="Playa" class="w-full h-auto object-cover">
+        <div class="absolute inset-0 flex flex-col items-center justify-center">
+            <h1 class="text-white font-bold text-2xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-center mb-4">
+                CAPTURING ESSENCE</h1>
+            <a href="#article">
+                <svg class="w-14 h-14 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 17 14">
+                    <path fill="#fff" d="M1 5l8 7 8-7H1z" />
+                </svg>
+            </a>
+        </div>
+    </div>
+    <div class="m-4" id="article">
         <section class="text-gray-700 space-y-6 container mx-auto my-8 max-w-2xl">
             <p class="mb-4">Nature photography is a captivating art that allows us to connect with the beauty of the
                 natural world. To truly capture the essence of nature with your camera, here are some tips to elevate
                 your skills and bring your photos to life.</p>
-            <img src="../../IMAGES/animals.jpg" alt="Blog Image" class="mb-8 w-full rounded-md">
 
             <h2 class="text-2xl font-bold mb-2">1. Embrace the Golden Hours</h2>
             <p class="mb-4">Capture the magical moments during the golden hours, which occur shortly after sunrise and
@@ -93,6 +114,21 @@
                 with extraordinary shots.</p>
         </section>
     </div>
+    <!-- <div id="splide" class="splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <img src="../../IMAGES/animals.jpg" alt="Slide 1">
+            </li>
+            <li class="splide__slide">
+              <img src="../../IMAGES/animals.jpg" alt="Slide 2">
+            </li>
+            <li class="splide__slide">
+              <img src="../../IMAGES/animals.jpg" alt="Slide 3">
+            </li>
+          </ul>
+        </div>
+      </div> -->
     <!-- FOOTER -->
     <footer class="bg-orange-200 rounded-lg shadow p-4">
         <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
