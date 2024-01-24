@@ -5,22 +5,33 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PHOTOGRAPHY MARC</title>
-  <link rel="stylesheet" href="./styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-image: url('../src/IMAGES/landscape.jpg');
+      background-size: cover;
+      background-position: center;
+      animation: flash 2s ease-in;
+    }
 
+    @keyframes flash {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 2;
+      }
+    }
+  </style>
 </head>
 
-<body class="flex justify-center items-center h-screen">
+<body class="flex justify-center items-center h-screen relative">
   <div class="text-center">
-    <h1 class="text-6xl text-amber-700">PHOTOGRAPHY MARC</h1>
-    <br>
-    <img src="IMAGES/logo.png" class="mx-auto rounded-full w-80 h-80">
-    <a href="../src/HTML/home.html" class="bg-amber-700 hover:bg-orange-500 text-white font-bold py-2 px-4 rounded">
-      ENTRA AL WEB
+    <a href="../src/HTML/home.html">
+      <img src="../src/IMAGES/logo_bg_white.png" class="mx-auto rounded-full w-60 h-40">
     </a>
   </div>
 </body>
-
-
-
 
 </html>

@@ -1,8 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
-    new Splide('#splide', {
+  const splide = new Splide('#default-carousel', {
       type       : 'fade',
       heightRatio: 0.5,
       pagination : false,
       arrows     : true,
-    }).mount();
-  });
+  }).mount();
+
+});
